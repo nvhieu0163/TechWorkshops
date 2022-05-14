@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="utf-8">
+    <title>Selected Text Auto Summarizing</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- own CSS and JavaScript -->
+    <link href="styles.css" rel="stylesheet">
+    <script src="summarizing.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-custom">
+          <div class="navbar-brand text-white"><b>Text Auto Summarization Tool</b></div>
+      </div>
+    </header>
+    <main>
+      <!-- default content if no text selected -->
+      <div class="accordion" id="accordion">
+        <div class="card">
+          <div class="card-header bg-danger" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <b class="text-white"> No text selected! </b>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <b>Select some text then try again!</b>
+              <hr>
+              <span>
+                <em> Select english text, which filtered out the pictures and preprocessed automatically,<br> 
+                then click the icon of extension to summarize.<br>
+                Your summarized text will be showed after few seconds.</em>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
